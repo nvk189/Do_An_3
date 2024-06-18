@@ -49,6 +49,7 @@ const orderShip = () => {
     console.log(selectedOrder);
   }, [selectedOrder]);
 
+  // checkbox các đơn hàng bị hủy
   const handleCheckboxChange = (order) => {
     setSelectedOrder((prevSelectedOrder) => {
       if (prevSelectedOrder.some((p) => p.id === order.id)) {
@@ -58,6 +59,8 @@ const orderShip = () => {
       }
     });
   };
+
+  // đơn hàng giao thành công
   const handlePlaceOrder = async () => {
     try {
       await orderAPI.updateReal();
@@ -69,6 +72,7 @@ const orderShip = () => {
     }
   };
 
+  // cập nhật đơn hàng bị hủy
   const handleOrderFail = async () => {
     try {
       const response = await orderAPI.updateFail(selectedOrder);

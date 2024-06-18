@@ -4,7 +4,6 @@ import { Link, useLocation } from "react-router-dom";
 const notificationOrder = () => {
   const location = useLocation();
   const orderId = location.state || { orderId: [] };
-  console.log(orderId);
   return (
     <div>
       <div

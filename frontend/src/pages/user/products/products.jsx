@@ -56,7 +56,7 @@ const Products = () => {
       .catch((error) => {
         alert("lỗi hệ thống" + error.message);
       });
-  }, [protype]);
+  }, []);
 
   const { currentItems, pageCount, handlePageClick } = usePagination(
     data,

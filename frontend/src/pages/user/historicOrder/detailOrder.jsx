@@ -11,10 +11,12 @@ const detailOrder = () => {
   const { id } = useParams();
 
   // const formatNumber = (value) => {
-  //   return value.toLocaleString("vi-VN", {
-  //     style: "currency",
-  //     currency: "VND",
-  //   });
+  //   if (value != "") {
+  //     return value.toLocaleString("vi-VN", {
+  //       style: "currency",
+  //       currency: "VND",
+  //     });
+  //   }
   // };
   const {
     register,

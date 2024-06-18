@@ -6,7 +6,7 @@ const homeAPI = {
       const response = await api.get("/static/getproductHot");
       return response.data;
     } catch (error) {
-      console.error("Lỗi khi truy xuất sản phẩm bán chạy:", error);
+      console.error("Lỗi :", error);
       throw error;
     }
   },
@@ -15,7 +15,7 @@ const homeAPI = {
       const response = await api.get("/static/getSales");
       return response.data;
     } catch (error) {
-      console.error("Lỗi khi truy xuất sản phẩm bán chạy:", error);
+      console.error("Lỗi :", error);
       throw error;
     }
   },

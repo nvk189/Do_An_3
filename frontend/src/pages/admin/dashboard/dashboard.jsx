@@ -25,7 +25,7 @@ const dashboard = () => {
         setOrder(response);
       })
       .catch((error) => {
-        console.error("Error fetching customers:", error);
+        console.error("Lỗi :", error);
       });
   }, []);
   useEffect(() => {
@@ -34,7 +34,7 @@ const dashboard = () => {
         setDate(response);
       })
       .catch((error) => {
-        console.error("Error fetching customers:", error);
+        console.error("Lỗi:", error);
       });
   }, []);
 
@@ -73,7 +73,7 @@ const dashboard = () => {
             <div className="card border-left-success shadow h-100 py-2">
               <div className="card-body">
                 <div className="row no-gutters align-items-center">
-                  <div className="col mr-2">
+                  <div className="col mr-2 " style={{ paddingLeft: "5px" }}>
                     <div className="text-xs font-weight-bold text-success text-uppercase mb-1">
                       Đơn đặt hàng
                     </div>
@@ -90,7 +90,7 @@ const dashboard = () => {
             <div className="card border-left-info shadow h-100 py-2">
               <div className="card-body">
                 <div className="row no-gutters align-items-center">
-                  <div className="col mr-2">
+                  <div className="col mr-2" style={{ paddingLeft: "5px" }}>
                     <div className="text-xs font-weight-bold text-warning text-uppercase mb-1">
                       Sản phẩm bán được trong ngày
                     </div>
@@ -106,7 +106,7 @@ const dashboard = () => {
             <div className="card border-left-warning shadow h-100 py-2">
               <div className="card-body">
                 <div className="row no-gutters align-items-center">
-                  <div className="col mr-2">
+                  <div className="col mr-2" style={{ paddingLeft: "5px" }}>
                     <div className="text-xs font-weight-bold text-warning text-uppercase mb-1">
                       Doanh thu ngày hiện tại
                     </div>
